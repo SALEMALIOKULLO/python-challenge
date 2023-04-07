@@ -9,8 +9,8 @@ Successfully created the directory /tmp/om
 
 budget_data = os.path.join("Resources", "budget_data.csv")
 
-with open(csvpath, encoding= 'utf-8') as csvfile:
-
+with open(budget_data_csv_path, newline="") as csvfile:
+       
 csvreader = csv.reader(csvfile, delimiter = ',')
 next(csvreader)
 #Excluding first month from looping
